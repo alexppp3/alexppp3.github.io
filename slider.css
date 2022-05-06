@@ -1,0 +1,126 @@
+
+.slider {
+  width: inherit;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+  width: inherit;
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: inherit;
+  height: auto;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;*/
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.slides > div:target {
+/*   transform: scale(0.8); */
+}
+.author-info {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+.author-info a {
+  color: white;
+}
+
+.slider > a {
+  display: inline-flex;
+  /*width: 1.5rem;*/
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+  color: black;
+  padding: 5px;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+  color: white;
+}
+
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
+
+.inner-slidecontainer {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.slidecontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+}
+
+.pricelist {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+	align-items: stretch;
+	justify-items: stretch;
+}
+.end {
+	text-align: end;
+}

@@ -1,0 +1,322 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+	background-color: #F9F7F5;
+}
+b {
+	font-weight: 700;
+}
+.background {
+	background: url('background-1.jpg') top no-repeat;
+	background-size: cover;
+}
+.main {
+	width: 80vw;
+	max-width: 1200px;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.almost-white {
+	color: #F9F7F5;
+}
+nav {
+	width: 80vw;
+	max-width: 1200px;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1em;
+	align-items: center;
+}
+.logo {
+	width: 200px;
+}
+.block {
+	margin-top: 10px;
+}
+p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#lawyer {
+	font-size: 35pt;
+}
+#name {
+	font-size: 72pt;
+	font-weight: 700;
+}
+#desc {
+	margin-top: 50px;
+	font-size: 28pt;
+}
+.cards {
+	width: 80vw;
+	max-width: 1200px;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, minmax(400px, auto));
+	grid-gap: 1em;
+}
+.card {
+	margin: 5px;
+	padding: 18px;
+	color: white;
+	cursor: pointer;
+	transition-duration: 200ms;
+}
+.card:hover {
+	margin: 0;
+	padding-left: 23px;
+	padding-top: 23px;
+	opacity: 0.85;
+	transition-duration: 200ms;
+}
+#com {
+	background-color: #33658a;
+}
+#adm {
+	background-color: #fe9920;
+	color: black !important;
+}
+#civ {
+	background-color: #ff595e;
+}
+#taxation {
+	background-color: #87B37A;
+}
+#crim {
+	background-color: #0d0a0b;
+}
+#abon {
+	background-color: #E1F0C4;
+	color: black !important;
+}
+.card-head {
+	font-size: 24pt;
+	font-weight: 700;
+	margin-bottom: 1em;
+}
+.card-desc {
+	font-size: 16pt;
+}
+#why {
+	font-size: 62pt;
+	text-align: center;
+}
+#contact {
+	font-size: 58pt;
+	text-align:	center;
+	margin-bottom: 20px;
+}
+.bio {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 1em;
+	align-items: center;
+	justify-items: stretch;
+	font-size: 15pt;
+	padding: 15px;
+}
+#photo {
+	width: 300px;
+	border-radius: 100%;
+	display: block;
+}
+.listed {
+	text-indent: 1em;
+}
+.form {
+	width: 700px;
+	max-width: 70%;
+	margin: auto;
+}
+.text {
+	width: calc(100% - 22px);
+	max-width: 700px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 16pt;
+	padding: 10px;
+	transition-duration: 200ms;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 8px;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);
+	margin-bottom: 1em;
+}
+.error {
+	border: 1px solid rgba(255,0,0,.2);
+	box-shadow: 0 2px 5px 0 rgb(255 0 0 / 20%);
+	transition-duration: 200ms;
+}
+textarea.text {
+	resize: none;
+	height: 5em;
+}
+.submit {
+	
+	margin: auto;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 16pt;
+	padding: 10px;
+	text-align: center;
+	color: #F9F7F5;
+	border: 1px solid #0d0a0b;
+	background-color: #0d0a0b;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);
+	
+	cursor: pointer;
+	transition-duration: 200ms;
+}
+.submit:hover {
+	opacity: 0.8;
+	transition-duration: 200ms;
+}
+footer {
+	margin-top: 25px;
+	padding: 10px;
+	padding-bottom: 30px;
+	color: #F9F7F5;
+	background-color: #0d0a0b;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2em;
+	justify-items: center;
+}
+footer div {
+	max-width: 500px;
+}
+.mb {
+	margin-bottom: 1em;
+	width: 100%;
+}
+.nolink {
+	display: block;
+	text-decoration: none;
+}
+.black {
+	font-size: 16pt;
+	font-weight: 700;
+	padding: 10px;
+	color: black;
+	text-align: center;
+}
+.block {
+	display: block;
+	text-decoration: none;
+}
+.no-padding {
+	padding: 0;
+}
+
+@media (max-width: 1300px) { 
+	.cards {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(3, minmax(400px, auto));
+	}
+}
+@media (max-width: 870px) { 
+	.cards {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, minmax(400px, auto));
+	}
+	.bio {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+	.main {
+		width: 90vw;
+	}
+	.cards {
+		width: 90vw;
+	}
+}
+@media (max-width: 760px) { 
+	#lawyer {
+		font-size: 30pt;
+		padding: 0 10px 0 10px;
+	}
+	#name {
+		font-size: 62pt;
+		padding: 0 10px 0 10px;
+	}
+	#desc {
+		font-size: 22pt;
+		padding: 0 10px 0 10px;
+	}
+	#contact {
+		font-size: 50pt;
+	}
+	.form {
+	max-width: 80%;
+	}
+	.bio p {
+		font-size: 14pt;
+	}
+	#photo {
+		width: 200px;
+	}
+}
+@media (max-width: 628px) { 
+	#lawyer {
+		font-size: 25pt;
+	}
+	#name {
+		font-size: 52pt;
+	}
+}
+@media (max-width: 605px) { 
+	.hide {
+		display: none;
+	}
+	#logotype {
+		text-align: center;
+	}
+	nav {
+		grid-template-columns: 1fr;
+		justify-items: stretch;
+	}
+	#contbtn {
+		margin-bottom: 10px;
+	}
+	.main {
+		width: 95vw;
+	}
+	#contact {
+		font-size: 40pt;
+		margin-top: -20px;
+	}
+	footer {
+		font-size: 10pt;
+	}
+}
+@media (max-width: 370px) { 
+	#lawyer {
+		font-size: 20pt;
+	}
+	#name {
+		font-size: 40pt;
+	}
+	#contact {
+		font-size: 35pt;
+	}
+	#why {
+		font-size: 50pt;
+	}
+	.card-head {
+		font-size: 22pt;
+	}
+	.card-desc {
+		font-size: 14pt;
+	}
+}

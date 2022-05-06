@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Адвокат Паляниця</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="slider.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<nav>
+			<div id="logotype">
+				<img src="logo.png" class="logo">
+			</div>
+			<div class="hide">
+			</div>
+			<div class="hide">
+				<a class="nolink black slow" href="#practises">Практики</a>
+			</div>
+			<div>
+				<a class="submit nolink slow" id="contbtn" href="#contact">Зв'язатися</a>
+			</div>
+		</nav>
+		<div class="background">
+			<div class="main almost-white">
+				<div class="block">
+					<p id="lawyer">Адвокат в Тростянці</p>
+					<p id="name">Петро Паляниця</p>
+				</div>
+				<div>
+					<p id="desc">Надаю юридичні послуги в галузі приватного права більше <b>3&nbsp;років</b>.</p>
+				</div>
+			</div>
+		</div>
+		<div class="cards" id="practises">
+			<a class="card block slow" href="#commercial" id="com">
+				<p class="card-head">Господарське право</p>
+				<p class="card-desc">Реєстрація юридичних осіб</p>
+				<p class="card-desc">Отримання ліцензій та дозволів</p>
+				<p class="card-desc">Корпоративні спори</p>
+				<p class="card-desc">Консультування бізнесу</p>
+			</a>
+			<a class="card block slow" href="#admin" id="adm">
+				<p class="card-head">Адміністративне право</p>
+				<p class="card-desc">Оскарження постанов по справах про адміністративні правопорушення</p>
+				<p class="card-desc">Послуги автоюриста</p>
+				<p class="card-desc">Представництво в адміністративному суді</p>
+			</a>
+			<a class="card block slow" href="#civil" id="civ">
+				<p class="card-head">Цивільне право</p>
+				<p class="card-desc">Розторгнення шлюбів</p>
+				<p class="card-desc">Стягнення заборгованостей по договорам</p>
+				<p class="card-desc">Визнання договорів недійсними</p>
+				<p class="card-desc">Оформлення спадщини</p>
+			</a>
+			<a class="card block slow" href="#tax" id="taxation">
+				<p class="card-head">Податкове право</p>
+				<p class="card-desc">Оптимізація оподаткування</p>
+				<p class="card-desc">Розмитнення товарів</p>
+				<p class="card-desc">Оскарження податкових повідомлень</p>
+				<p class="card-desc">Представництво в органах податкового контролю</p>
+			</a>
+			<a class="card block slow" href="#criminal" id="crim">
+				<p class="card-head">Кримінальне право</p>
+				<p class="card-desc">White-collar crime</p>
+				<p class="card-desc">Податкові кримінальні правопорушення</p>
+				<p class="card-desc">Злочини проти власності</p>
+				<p class="card-desc">Кримінальні правопорушення, що посягають на встановлений порядок управління</p>
+				<p class="card-desc">Захист прав ув'язнених</p>
+			</a>
+			<a class="card block slow" href="#abonent" id="abon">
+				<p class="card-head">Абонентське обслуговування</p>
+				<p class="card-desc">Передоплачене обслуговування фізичних та юридичних осіб</p>
+			</a>
+		</div>
+		
+		<div class="main">
+			<p id="why">Чому я?</p>
+			<div class="bio">
+				<img id="photo" src="person.jpg">
+				<div>
+					<p>Мене звати <b>Паляниця Петро Петрович</b>, і я адвокат в Тростянці.</p>
+					<p>Мій юридичний стаж складає <b>3&nbsp;роки і 5&nbsp;місяців</b>, і за цей час я встиг:</p>
+					<p class="listed">виграти <b>15&nbsp;справ</b> в суді;</p>
+					<p class="listed">обслугувати більше ніж <b>500&nbsp;клієнтів</b>;</p>
+					<p class="listed">домогтися присудження більше ніж <b>75&nbsp;000&nbsp;гривень</b> моральної компенсації в суді.</p><br>
+					<p>Перша консультація надається <b>безкоштовно</b>.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="main">
+			<p id="contact">Замовити консультацію</p>
+			<form method="post" action="" class="form" id="form">
+				<input type="text" class="text" id="yourname" placeholder="Ваше ім'я">
+				<input type="tel" class="text" id="phone" placeholder="Номер телефону">
+				<textarea class="text" id="question" placeholder="Питання"></textarea>
+				<button type="button" class="submit mb" onclick="messageSent()">Відправити</button>
+			</form>
+		</div>
+		
+		<div class="main slidecontainer">
+			<div class="inner-slidecontainer">
+				<div class="slider">
+				  <p>Практики:</p>
+				  <a class="slowslide" href="#commercial">Господарська</a>
+				  <a class="slowslide" href="#admin">Адміністративна</a>
+				  <a class="slowslide" href="#civil">Цивільна</a>
+				  <a class="slowslide" href="#tax">Податкова</a>
+				  <a class="slowslide" href="#criminal">Кримінальна</a>
+				  <a class="slowslide" href="#abonent">Передплата</a>
+
+				  <div class="slides">
+					<div id="commercial">
+						<p class="card-head">Господарська практика</p>
+						<div class="pricelist">
+						  <p class="card-desc">Оформлення документів на державну реєстрацію юридичної особи</p>
+						  <p class="card-desc end">від 2000 грн.</p>
+						  <p class="card-desc">Розробка статуту юридичної особи</p>
+						  <p class="card-desc end">від 500 грн.</p>
+						  <p class="card-desc">Збір документів на отримання ліцензії</p>
+						  <p class="card-desc end">від 3500 грн.</p>
+						  <p class="card-desc">Консультування з питань господарського права</p>
+						  <p class="card-desc end">від 500 грн.</p>
+						</div>
+					</div>
+					<div id="admin">
+					  <p class="card-head">Адміністративна практика</p>
+						<div class="pricelist">
+						  <p class="card-desc">Оскарження постанови про адміністративне правопорушення</p>
+						  <p class="card-desc end">від 350 грн.</p>
+						  <p class="card-desc">Представництво у суді, на адмінкомісії</p>
+						  <p class="card-desc end">від 1000 грн.</p>
+						  <p class="card-desc">Допомога при ДТП</p>
+						  <p class="card-desc end">за домовленістю</p>
+						</div>
+					</div>
+					<div id="civil">
+					  <p class="card-head">Цивільна практика</p>
+						<div class="pricelist">
+						  <p class="card-desc">Написання позовної заяви</p>
+						  <p class="card-desc end">від 750 грн.</p>
+						  <p class="card-desc">Складання інших процесуальних документів</p>
+						  <p class="card-desc end">від 200 грн.</p>
+						  <p class="card-desc">Правовий аналіз ситуацій, договорів</p>
+						  <p class="card-desc end">від 400 грн.</p>
+						  <p class="card-desc">Зняття арешту</p>
+						  <p class="card-desc end">від 2500 грн.</p>
+						  <p class="card-desc">Супровід оформлення банкрутства</p>
+						  <p class="card-desc end">за домовленістю</p>
+						</div>
+					</div>
+					<div id="tax">
+					  <p class="card-head">Податкова практика</p>
+						<div class="pricelist">
+						  <p class="card-desc">Консультування з питань оподаткування</p>
+						  <p class="card-desc end">від 300 грн.</p>
+						  <p class="card-desc">Супровід розмитнення товарів</p>
+						  <p class="card-desc end">від 400 грн.</p>
+						  <p class="card-desc">Оскарження нарахованих податків</p>
+						  <p class="card-desc end">від 100 грн.</p>
+						  <p class="card-desc">Оформлення свідоцтва платника ПДВ</p>
+						  <p class="card-desc end">від 400 грн.</p>
+						  <p class="card-desc">Представництво в суді та податкових органах</p>
+						  <p class="card-desc end">за домовленістю</p>
+						</div>
+					</div>
+					<div id="criminal">
+					  <p class="card-head">Кримінальна практика</p>
+						<div class="pricelist">
+						  <p class="card-desc">Виїзд на місце проведення обшуку</p>
+						  <p class="card-desc end">500 грн.</p>
+						  <p class="card-desc">Присутність на допиті</p>
+						  <p class="card-desc end">600 грн. за годину</p>
+						  <p class="card-desc">Представництво в суді</p>
+						  <p class="card-desc end">за домовленістю</p>
+						  <p class="card-desc">Оскарження клопотань слідчого, прокурора</p>
+						  <p class="card-desc end">від 500 грн.</p>
+						  <p class="card-desc">Складання скарг на умови в місцях позбавлення волі</p>
+						  <p class="card-desc end">від 100 грн.</p>
+						</div>
+					</div>
+					<div id="abonent">
+						<p class="card-head">Абонентське обслуговування</p>
+						<p class="card-desc">Вартість залежить від галузі права, строку договору та інших умов.</p>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="main no-padding">
+			<a class="submit nolink slow" id="contbtn" href="#contact">Зв'язатися</a>
+		</div>
+		
+		<footer>
+			<div>
+				<p>Адвокат Паляниця Петро Петрович</p>
+				<p>Свідоцтво про право на зайняття адвокатською діяльністю №245 видане КДКА Сумської області 24&nbsp;липня 2019 року</p>
+			</div>
+			<div>
+				<p>вулиця Шевченка, будинок&nbsp;9, м.&nbsp;Тростянець, Сумська область</p>
+				<p>Телефон: +380(09)123 45 97</p>
+				<p>e-mail: palyanitsa@example.com</p>
+			</div>
+		</footer>
+</html>
